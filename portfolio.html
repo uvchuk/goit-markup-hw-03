@@ -17,32 +17,34 @@
 
 	<body>
 		<!-- Шапка сайту -->
-		<header>
-			<nav class="nav">
-				<a href="./index.html" class="logo"><span class="logo-style">Web</span>Studio</a>
-				<ul class="nav-list list">
-					<li class="nav-item"><a href="./index.html" class="nav-link nlink">Студія</a></li>
-					<li class="nav-item"><a href="./portfolio.html" class="nav-link nlink opened">Портфоліо</a></li>
-					<li class="nav-item"><a href="#" class="nav-link nlink">Контакти</a></li>
+		<header class="header">
+			<div class="container nav-container">
+				<nav class="nav-main">
+					<a href="./index.html" class="logo"><span class="logo-style">Web</span>Studio</a>
+					<ul class="nav-list list">
+						<li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
+						<li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфоліо</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+					</ul>
+				</nav>
+				<ul class="contact-list list">
+					<li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact">info@devstudio.com</a></li>
+					<li class="contact-item"><a href="tel:+380961111111" class="nav-contact">+38 096 111 11 11</a></li>
 				</ul>
-			</nav>
-			<ul class="contact-list list">
-				<li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact nlink">info@devstudio.com</a></li>
-				<li class="contact-item"><a href="tel:+380961111111" class="nav-contact nlink">+38 096 111 11 11</a></li>
-			</ul>
+			</div>
 		</header>
 		<!-- Основний контент -->
 		<main>
-			<section class="projects">
+			<section class="projects container">
 				<h1 class="hidden-tittle">Portfolio</h1>
-				<ul class="filtr-list">
-					<li><button type="button" class="btn-filtr">Усі</button></li>
-					<li><button type="button" class="btn-filtr">Веб-сайти</button></li>
-					<li><button type="button" class="btn-filtr">Додатки</button></li>
-					<li><button type="button" class="btn-filtr">Дизайн</button></li>
-					<li><button type="button" class="btn-filtr">Маркетинг</button></li>
+				<ul class="filter-list list">
+					<li><button type="button" class="btn filter">Усі</button></li>
+					<li><button type="button" class="btn filter">Веб-сайти</button></li>
+					<li><button type="button" class="btn filter">Додатки</button></li>
+					<li><button type="button" class="btn filter">Дизайн</button></li>
+					<li><button type="button" class="btn filter">Маркетинг</button></li>
 				</ul>
-				<ul class="project-list">
+				<ul class="project-list list">
 					<li>
 						<a href="#" class="project-item">
 							<img src="./images/portfolio1.jpg" alt="Технокряк" width="370" height="295" />
@@ -111,18 +113,20 @@
 		</main>
 		<!-- Підвал -->
 		<footer class="footer">
-			<a href="./index.html" class="logo flogo"><span class="logo-style">Web</span>Studio</a>
-			<address>
-				<ul class="address-list list">
-					<li class="address-item">
-						<a href="https://goo.gl/maps/2UuTohdzLRWrKuVo7" class="address-link flink" target="_blank" rel="noopener noreferrer nofollow"
-							>м. Київ, пр-т Лесі Українки, 26</a
-						>
-					</li>
-					<li class="address-item"><a href="mailto:info@devstudio.com" class="fut-contact flink">info@devstudio.com</a></li>
-					<li class="address-item"><a href="tel:+380961111111" class="fut-contact flink">+38 096 111 11 11</a></li>
-				</ul>
-			</address>
+			<div class="container">
+				<a href="./index.html" class="logo"><span class="logo-style">Web</span>Studio</a>
+				<address>
+					<ul class="address-list list">
+						<li class="address-item">
+							<a href="https://goo.gl/maps/2UuTohdzLRWrKuVo7" class="address-link" target="_blank" rel="noopener noreferrer nofollow"
+								>м. Київ, пр-т Лесі Українки, 26</a
+							>
+						</li>
+						<li class="address-item"><a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a></li>
+						<li class="address-item"><a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a></li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
