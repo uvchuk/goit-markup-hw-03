@@ -46,9 +46,9 @@ p {
     list-style: none;
 }
 
-.image {
+img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -136,6 +136,8 @@ p {
 
 .contact-item .nav-contact {
     display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     text-decoration: none;
     font-weight: 500;
@@ -153,13 +155,14 @@ p {
 /* Hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--third-background-color);
 }
 
 .hero .hero-title {
     margin: 0 auto 30px auto;
-    padding-top: 200px;
     max-width: 700px;
 
     font-weight: 900;
@@ -173,7 +176,6 @@ p {
 
 .hero .hero.btn {
     display: inline-block;
-    margin-bottom: 200px;
     padding: 10px 32px;
     border-radius: 4px;
 
@@ -193,6 +195,10 @@ p {
 }
 
 /* Features */
+
+.features.section {
+    padding-bottom: 47px;
+}
 
 .hidden-tittle {
     position: absolute;
@@ -238,8 +244,8 @@ p {
 
 /* What we do */
 
-.wwd {
-    padding-top: 0;
+.wwd.section {
+    padding-top: 47px;
 }
 
 .wwd .wwd-title {
@@ -283,10 +289,6 @@ p {
 }
 
 .team-list .team-member {
-    padding-bottom: 30px;
-
-    text-align: center;
-
     background-color: var(--page-main-color);
 }
 
@@ -294,9 +296,14 @@ p {
     margin-right: 30px;
 }
 
-.team-member .team-colegue {
-    margin-top: 30px;
+.team-member .member-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
+.team-member .colegue-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -304,8 +311,8 @@ p {
     color: var(--text-main-color);
 }
 
-.team-member .team-speciality {
-    margin-top: 10px;
+.team-member .colegue-speciality {
+    /* margin-top: 10px; */
 
     font-weight: 400;
     font-size: 16px;
@@ -352,11 +359,11 @@ p {
 .project-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.project-list .project-item {
+/* .project-list .project-item {
     width: calc((100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
 }
 
 .project-list .project-item:not(:nth-child(3n + 3)) {
@@ -365,15 +372,21 @@ p {
 
 .project-list .project-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
-}
+} */
 
 .project-item .project-link {
     text-decoration: none;
 }
 
+.project-item .project-info {
+    padding: 20px 0 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
 .project-item .project-title {
-    margin-top: 20px;
-    margin-left: 24px;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -384,7 +397,7 @@ p {
 }
 
 .project-item .project-description {
-    margin: 4px auto 20px 24px;
+    /* margin: 4px auto 20px 24px; */
 
     font-size: 16px;
     line-height: 1.88;
@@ -396,13 +409,13 @@ p {
 /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--third-background-color);
 }
 
 .footer .logo {
     display: inline-block;
-    padding-top: 60px;
-    padding-bottom: 20px;
 
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -413,12 +426,17 @@ p {
     color: var(--page-main-color);
 }
 
-.footer .address-list {
-    padding-bottom: 60px;
+.footer .address {
+    margin-top: 20px;
+}
 
+.footer .address-list {
     font-style: normal;
 }
 
+.footer .address-item:not(:last-child) {
+    margin-bottom: 8px;
+}
 
 .address-list .address-link {
     line-height: 1.71;
