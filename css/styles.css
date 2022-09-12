@@ -8,6 +8,8 @@
     --logo-color: #000000;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --btn-background-color: #188CE8;
+    --prm-border-color: #ECECEC;
+    --sec-border-color: #EEEEEE;
 }
 
 body {
@@ -28,6 +30,17 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -40,18 +53,6 @@ p {
     cursor: pointer;
 }
 
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -60,7 +61,7 @@ img {
 /* Header */
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--prm-border-color);
 }
 
 .header .nav-container {
@@ -157,7 +158,9 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+
     text-align: center;
+
     background-color: var(--third-background-color);
 }
 
@@ -177,6 +180,7 @@ img {
 .hero .hero.btn {
     display: inline-block;
     padding: 10px 32px;
+    border-color: transparent;
     border-radius: 4px;
 
     font-family: inherit;
@@ -299,11 +303,13 @@ img {
 .team-member .member-info {
     padding-top: 30px;
     padding-bottom: 30px;
+
     text-align: center;
 }
 
 .team-member .colegue-name {
     margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -312,8 +318,6 @@ img {
 }
 
 .team-member .colegue-speciality {
-    /* margin-top: 10px; */
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -379,10 +383,10 @@ img {
 }
 
 .project-item .project-info {
-    padding: 20px 0 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+    border-right: 1px solid var(--sec-border-color);
+    border-bottom: 1px solid var(--sec-border-color);
+    border-left: 1px solid var(--sec-border-color);
 }
 
 .project-item .project-title {
@@ -397,8 +401,6 @@ img {
 }
 
 .project-item .project-description {
-    /* margin: 4px auto 20px 24px; */
-
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -411,6 +413,7 @@ img {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
     background-color: var(--third-background-color);
 }
 
